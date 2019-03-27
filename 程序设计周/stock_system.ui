@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Stock_System</class>
+ <widget class="QMainWindow" name="Stock_System">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1187</width>
+    <height>908</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Stock_System</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>-10</y>
+      <width>1201</width>
+      <height>921</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QTableWidget" name="table">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>110</y>
+       <width>521</width>
+       <height>641</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-top-color: rgb(0, 0, 0);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>130</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;黑体&quot;;
+</string>
+     </property>
+     <property name="text">
+      <string>编号</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="identifer">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>190</y>
+       <width>271</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius:15px;
+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>250</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;黑体&quot;;
+</string>
+     </property>
+     <property name="text">
+      <string>商品名</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="goodsname">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>310</y>
+       <width>271</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius:15px;
+
+</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="category">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>430</y>
+       <width>271</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius:15px;
+
+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>760</x>
+       <y>380</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;黑体&quot;;
+</string>
+     </property>
+     <property name="text">
+      <string>类型</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_5">
+     <property name="geometry">
+      <rect>
+       <x>760</x>
+       <y>500</y>
+       <width>301</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+font: 16pt &quot;楷体&quot;;
+border-radius:15px</string>
+     </property>
+     <property name="text">
+      <string>查询</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="out">
+     <property name="geometry">
+      <rect>
+       <x>950</x>
+       <y>570</y>
+       <width>131</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+font: 16pt &quot;楷体&quot;;
+border-radius:15px</string>
+     </property>
+     <property name="text">
+      <string>出库</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="input">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>570</y>
+       <width>121</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+font: 16pt &quot;楷体&quot;;
+border-radius:15px</string>
+     </property>
+     <property name="text">
+      <string>进货</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="warning">
+     <property name="geometry">
+      <rect>
+       <x>830</x>
+       <y>500</y>
+       <width>311</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>宋体</family>
+       <pointsize>9</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>20</y>
+       <width>501</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>宋体</family>
+       <pointsize>35</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 35pt &quot;宋体&quot;;</string>
+     </property>
+     <property name="text">
+      <string>超市库存管理系统</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>30</y>
+       <width>131</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+font: 16pt &quot;楷体&quot;;
+border-radius:15px</string>
+     </property>
+     <property name="text">
+      <string>主页</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>950</x>
+       <y>30</y>
+       <width>141</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+font: 16pt &quot;楷体&quot;;
+border-radius:15px</string>
+     </property>
+     <property name="text">
+      <string>日志</string>
+     </property>
+    </widget>
+    <widget class="mypaint" name="label_d">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>770</y>
+       <width>901</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>780</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;宋体&quot;;</string>
+     </property>
+     <property name="text">
+      <string>余量预警 ：</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_6">
+     <property name="geometry">
+      <rect>
+       <x>950</x>
+       <y>670</y>
+       <width>141</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+font: 16pt &quot;楷体&quot;;
+border-radius:15px</string>
+     </property>
+     <property name="text">
+      <string>退出</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_8">
+     <property name="geometry">
+      <rect>
+       <x>740</x>
+       <y>670</y>
+       <width>141</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+font: 16pt &quot;楷体&quot;;
+border-radius:15px</string>
+     </property>
+     <property name="text">
+      <string>预警线</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_7">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>810</y>
+       <width>114</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>系统重置</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <action name="actionchongzhi">
+   <property name="text">
+    <string>chongzhi </string>
+   </property>
+  </action>
+  <action name="actionformat">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>format</string>
+   </property>
+  </action>
+  <action name="actionwarning_line">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>warning_number</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>false</bool>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>mypaint</class>
+   <extends>QLabel</extends>
+   <header>mypaint.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

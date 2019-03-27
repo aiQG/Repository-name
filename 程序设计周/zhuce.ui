@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>zhuce</class>
+ <widget class="QDialog" name="zhuce">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>212</width>
+    <height>253</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLineEdit" name="zhanghao">
+   <property name="geometry">
+    <rect>
+     <x>66</x>
+     <y>50</y>
+     <width>125</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="mima">
+   <property name="geometry">
+    <rect>
+     <x>66</x>
+     <y>80</y>
+     <width>125</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="zhuceBt">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>129</y>
+     <width>81</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>注册</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="fanhuiBt">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>166</y>
+     <width>81</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>59</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>帐号:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>59</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>密码:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="zhuceOk">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>110</y>
+     <width>121</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>66</x>
+     <y>103</y>
+     <width>125</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

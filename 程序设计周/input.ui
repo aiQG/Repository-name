@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Input</class>
+ <widget class="QDialog" name="Input">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>602</width>
+    <height>438</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>611</width>
+     <height>431</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>04b_21</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>16</width>
+     <height>16</height>
+    </size>
+   </property>
+   <property name="elideMode">
+    <enum>Qt::ElideLeft</enum>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>新品</string>
+    </attribute>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>40</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;新宋体&quot;;</string>
+     </property>
+     <property name="text">
+      <string>编号</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>110</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;新宋体&quot;;</string>
+     </property>
+     <property name="text">
+      <string>名称</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>190</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;新宋体&quot;;</string>
+     </property>
+     <property name="text">
+      <string>类型</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>260</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;新宋体&quot;;</string>
+     </property>
+     <property name="text">
+      <string>数量</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="LineId_1">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>40</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius:15px;
+
+</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="send_1">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>330</y>
+       <width>131</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+font: 16pt &quot;楷体&quot;;
+border-radius:15px</string>
+     </property>
+     <property name="text">
+      <string>提交</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="Linename_1">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>120</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius:15px;
+
+</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="Linecategory">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>190</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius:15px;
+
+</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="Linenumber">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>260</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius:15px;
+
+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="warning_2">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>300</y>
+       <width>231</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>宋体</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_6">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>330</y>
+       <width>141</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+font: 16pt &quot;楷体&quot;;
+border-radius:15px</string>
+     </property>
+     <property name="text">
+      <string>退出</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <attribute name="title">
+     <string>老款</string>
+    </attribute>
+    <widget class="QComboBox" name="comboBox">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>90</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+font: 16pt &quot;楷体&quot;;
+border-radius:15px</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>编号</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>名称</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLineEdit" name="Linevar">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>90</y>
+       <width>161</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius:15px;
+
+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>240</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 15pt &quot;宋体&quot;;</string>
+     </property>
+     <property name="text">
+      <string>数量</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="Linenumber_2">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>240</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius:15px;
+</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="send_2">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>330</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+font: 16pt &quot;楷体&quot;;
+border-radius:15px</string>
+     </property>
+     <property name="text">
+      <string>提交</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>290</y>
+       <width>291</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>宋体</family>
+       <pointsize>18</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_7">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>330</y>
+       <width>141</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+font: 16pt &quot;楷体&quot;;
+border-radius:15px</string>
+     </property>
+     <property name="text">
+      <string>退出</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>-10</y>
+     <width>602</width>
+     <height>441</height>
+    </rect>
+   </property>
+  </widget>
+  <zorder>widget</zorder>
+  <zorder>tabWidget</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

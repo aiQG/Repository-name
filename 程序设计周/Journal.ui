@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Journal</class>
+ <widget class="QDialog" name="Journal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1245</width>
+    <height>707</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Journal</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QLabel" name="JournalLabel">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>50</y>
+     <width>321</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:20pt;&quot;&gt;日志列表&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="OptionLabel">
+   <property name="geometry">
+    <rect>
+     <x>980</x>
+     <y>280</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>选项</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TypeLabel">
+   <property name="geometry">
+    <rect>
+     <x>980</x>
+     <y>310</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>日志类别</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1251</width>
+     <height>711</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>90</y>
+      <width>901</width>
+      <height>601</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="InradioButton">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>350</y>
+      <width>89</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>入库</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="OutradioButton">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>350</y>
+      <width>89</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>出库</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="AllradioButton">
+    <property name="geometry">
+     <rect>
+      <x>1150</x>
+      <y>350</y>
+      <width>89</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>全部</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1251</width>
+      <height>711</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>980</x>
+       <y>390</y>
+       <width>211</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="pushButton_8">
+        <property name="styleSheet">
+         <string notr="true">
+font: 16pt &quot;楷体&quot;;
+border-radius:15px</string>
+        </property>
+        <property name="text">
+         <string>修改时间</string>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_7">
+        <property name="styleSheet">
+         <string notr="true">
+font: 16pt &quot;楷体&quot;;
+border-radius:15px</string>
+        </property>
+        <property name="text">
+         <string>关闭</string>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <zorder>widget</zorder>
+   <zorder>tableWidget</zorder>
+   <zorder>InradioButton</zorder>
+   <zorder>OutradioButton</zorder>
+   <zorder>AllradioButton</zorder>
+  </widget>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>-5</x>
+     <y>-5</y>
+     <width>1245</width>
+     <height>707</height>
+    </rect>
+   </property>
+  </widget>
+  <zorder>widget_2</zorder>
+  <zorder>frame</zorder>
+  <zorder>JournalLabel</zorder>
+  <zorder>OptionLabel</zorder>
+  <zorder>TypeLabel</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

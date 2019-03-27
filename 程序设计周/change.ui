@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Change</class>
+ <widget class="QDialog" name="Change">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>447</width>
+    <height>279</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>change</string>
+  </property>
+  <widget class="QLabel" name="startlabel">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>50</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>起始时间</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="overlabel">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>50</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>截止时间</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="startdateEdit">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>100</y>
+     <width>110</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="wrapping">
+    <bool>false</bool>
+   </property>
+   <property name="frame">
+    <bool>true</bool>
+   </property>
+   <property name="readOnly">
+    <bool>false</bool>
+   </property>
+   <property name="buttonSymbols">
+    <enum>QAbstractSpinBox::UpDownArrows</enum>
+   </property>
+   <property name="accelerated">
+    <bool>false</bool>
+   </property>
+   <property name="showGroupSeparator" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="dateTime">
+    <datetime>
+     <hour>0</hour>
+     <minute>0</minute>
+     <second>0</second>
+     <year>2018</year>
+     <month>11</month>
+     <day>1</day>
+    </datetime>
+   </property>
+   <property name="currentSection">
+    <enum>QDateTimeEdit::YearSection</enum>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+   <property name="timeSpec">
+    <enum>Qt::LocalTime</enum>
+   </property>
+   <property name="date">
+    <date>
+     <year>2018</year>
+     <month>11</month>
+     <day>1</day>
+    </date>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="overdateEdit">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>100</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+   <property name="date">
+    <date>
+     <year>2018</year>
+     <month>11</month>
+     <day>5</day>
+    </date>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="okpushBtn">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>200</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>确认</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cancelpushBtn">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>200</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>451</width>
+     <height>281</height>
+    </rect>
+   </property>
+  </widget>
+  <zorder>widget</zorder>
+  <zorder>startlabel</zorder>
+  <zorder>overlabel</zorder>
+  <zorder>startdateEdit</zorder>
+  <zorder>overdateEdit</zorder>
+  <zorder>okpushBtn</zorder>
+  <zorder>cancelpushBtn</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

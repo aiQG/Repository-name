@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Out_stock</class>
+ <widget class="QDialog" name="Out_stock">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>481</width>
+    <height>368</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QComboBox" name="out_cobox">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>60</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+font: 16pt &quot;楷体&quot;;
+border-radius:15px</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>编号</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>名称</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLineEdit" name="out_id_name">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>60</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:15px;
+</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>190</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 18pt &quot;宋体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>出库数量</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="out_number">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>190</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:15px;
+
+</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="out_button">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>280</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+font: 16pt &quot;楷体&quot;;
+border-radius:15px</string>
+   </property>
+   <property name="text">
+    <string>出库</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_6">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>280</y>
+     <width>141</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+font: 16pt &quot;楷体&quot;;
+border-radius:15px</string>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>481</width>
+     <height>371</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="out_warning">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>240</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>宋体</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <zorder>widget</zorder>
+  <zorder>out_cobox</zorder>
+  <zorder>out_id_name</zorder>
+  <zorder>label</zorder>
+  <zorder>out_number</zorder>
+  <zorder>out_button</zorder>
+  <zorder>pushButton_6</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
