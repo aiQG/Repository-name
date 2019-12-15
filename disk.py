@@ -2,7 +2,7 @@
 import math
 global allBlock
 allBlock = [
-    [0xff,0xff,0xff,0xff,0xff,0xff,0xff,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00],      #FAT表(其他值只能为6~15)
+    [0xff,0xff,0xff,0xff,0xff,0xff,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00],      #FAT表(其他值只能为6~15)
     [0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00],      #目录表1 (8byte-fileName, 4byte-fileSize, 4byte-fileStartBlock)
     [0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00],      #目录表2 (fileStartBlock 6~15)
     [0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00],      #目录表3
@@ -27,7 +27,7 @@ allBlock = [
 def fileInfo(filename):
     inName = str(filename)
     if(len(inName) > 8):
-        print("Error Name")
+        # print("Error Name")
         return 0,0,0
     
     for i in range(1,5):
@@ -36,15 +36,18 @@ def fileInfo(filename):
             if(ord(inName[j]) != allBlock[i][j]):
                 found = False
                 break
+            if(inName[j+1:] == '' and allBlock[i][j+1] != 0x00):
+                found = False
+                break
 
         if(found == True):
-            print("fileName: " + inName)
-            #print("fileSize: " + str(allBlock[i][8]*16**0+allBlock[i][9]*16**2+allBlock[i][10]*16**4+allBlock[i][11]*16**6) + " Byte")
+            # print("fileName: " + inName)
+            # print("fileSize: " + str(allBlock[i][8]*16**0+allBlock[i][9]*16**2+allBlock[i][10]*16**4+allBlock[i][11]*16**6) + " Byte")
             fileSize = allBlock[i][8]*16**0+allBlock[i][9]*16**2+allBlock[i][10]*16**4+allBlock[i][11]*16**6
-            #print("fileStart: " +hex(allBlock[i][12]*16**0+allBlock[i][13]*16**2+allBlock[i][14]*16**4+allBlock[i][15]*16**6))
+            # print("fileStart: " +hex(allBlock[i][12]*16**0+allBlock[i][13]*16**2+allBlock[i][14]*16**4+allBlock[i][15]*16**6))
             fileStart = allBlock[i][12]*16**0+allBlock[i][13]*16**2+allBlock[i][14]*16**4+allBlock[i][15]*16**6
             return fileSize,fileStart,i # i表示在第几块目录表
-    print("can not find this file")
+    # print("can not find this file")
     return 0,0,0
 
 # 列出所有文件的所有信息
@@ -72,6 +75,7 @@ def typeFile(fileName):
     if( m == 0 ):
         print("can not find this file")
         return False
+    assert size != 0
     tempStr = ''
     while(start != 0x00):
         if(start == 0xFF):
@@ -123,10 +127,10 @@ def mkfile(fileName, fileContent):
             print("disk full")
         return False
     size, start, m = fileInfo(fileName)
-    assert size == 0x00
     if(m != 0x00 or start != 0x00):
         print("File exists")
         return False
+    assert size == 0x00
 
     # fileName
     for i in range(0, len(fileName)):
@@ -158,7 +162,23 @@ def mkfile(fileName, fileContent):
     print("write OK")
     return True
 
-
+def delFile(fileName):
+    global allBlock
+    size, start, m = fileInfo(fileName)
+    assert size!=0
+    if(m == 0x00 or start == 0x00):
+        print("File does not exist")
+        return False
+    allBlock[start] = [0x00]*len(allBlock[start])
+    nextBlock = allBlock[0][start]
+    allBlock[0][start] = 0x00
+    while(nextBlock != 0xFF):
+        start = nextBlock
+        allBlock[start] = [0x00]*len(allBlock[start])
+        nextBlock = allBlock[0][start]
+        allBlock[0][start] = 0x00
+    allBlock[m] = [0x00]*len(allBlock[m])
+    return True
 
 
 
@@ -169,20 +189,23 @@ print("type (filename): cat file")
 print("del (filename): delete file")
 print("quit: quit")
 
-
-
-
 while(True):
     userInput = input(">> ")
 
     cmd = userInput.split(' ')
-    if(cmd[0] == 'mkfile'):
-        mkfile(cmd[1], cmd[2])
-    if(cmd[0] == 'type'):
-        typeFile(cmd[1])
-    if(cmd[0] == 'dir'):
-        dir()
-    if(cmd[0] == 'quit'):
-        exit()
-    if(cmd[0] == '?'):
-        print(allBlock)
+    try:
+        if(cmd[0] == 'mkfile'):
+            mkfile(cmd[1], cmd[2])
+        if(cmd[0] == 'del'):
+            delFile(cmd[1])
+        if(cmd[0] == 'type'):
+            typeFile(cmd[1])
+        if(cmd[0] == 'dir'):
+            dir()
+        if(cmd[0] == 'quit'):
+            exit()
+        if(cmd[0] == '?'):
+            print(allBlock)
+    except:
+        print("somethingError")
+
