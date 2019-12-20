@@ -195,6 +195,8 @@ while(True):
     cmd = userInput.split(' ')
     try:
         if(cmd[0] == 'mkfile'):
+            for i in range(3,len(cmd)):
+                cmd[2] += ' ' + cmd[i]
             mkfile(cmd[1], cmd[2])
         if(cmd[0] == 'del'):
             delFile(cmd[1])
